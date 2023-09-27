@@ -1,0 +1,120 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #adefd1ff;
+}
+
+.container {
+    margin: 5%;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* border: 2px solid; */
+    border-radius: 10px;
+    background-color: #fee715ff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+    font-size: 72px;
+    /* background: -webkit-linear-gradient(#408ec6, #7a2048, #1e2761);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+    color: #1e2761;
+    text-shadow: 5px 5px 8px #89abe3ff;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.input {
+    width: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+    width: 85%;
+    padding: 10px;
+    outline: none;
+    text-shadow: 2px 2px 4px #000000;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+button {
+    width: 25%;
+    background-color: #89abe3ff;
+    color: white;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.todos {
+    display: none;
+    white-space: normal;
+    word-break: break-all;
+    width: 100%;
+}
+
+.box p {
+    padding: 8px;
+    background-color: #89abe3ff;
+    /* border: 2px solid black; */
+    width: 100%;
+    font-size: 1.3rem;
+    margin-right: 10px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box {
+    display: flex;
+    align-items: baseline;
+}
+
+.inner {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.edit:hover,
+.del:hover {
+    color: rgb(0, 0, 255);
+}
+
+.edit:active,
+.del:active {
+    color: rgb(132, 214, 246);
+}
+
+@media screen and (min-width: 750px) {
+    .container {
+        width: 50%;
+        margin: 5%;
+    }
+}
